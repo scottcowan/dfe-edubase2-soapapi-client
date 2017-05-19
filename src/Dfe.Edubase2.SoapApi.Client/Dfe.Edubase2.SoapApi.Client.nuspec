@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>DFE.Edubase2.SoapAPI.Client</id>
+    <version>$version$</version>
+    <title>Edubase API Client</title>
+    <authors>scottcowan</authors>
+    <owners>scottcowan</owners>
+    <licenseUrl>http://www.apache.org/licenses/LICENSE-2.0.html</licenseUrl>
+    <projectUrl>https://github.com/scottcowan/dfe-edubase2-soapapi-client</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>API client to retrieve Educational information from DFE</description>
+    <summary>Edubase2 API client</summary>
+    <tags>DFE Edubase API</tags>
+    <language>en-GB</language>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" />
+    </frameworkAssemblies>
+  </metadata>
+  <files>
+    <file src="bin\Release\Ukrlp.SoapApi.Client.dll" target="lib\net45" />
+    <file src="Install\*.*" target="content" />
+  </files>
+</package>

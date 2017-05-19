@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.serviceModel>
+    <bindings>
+      <basicHttpBinding>
+        <binding name="EdubaseSoap11"  xdt:Locator="Match(name)" xdt:Transform="Remove" />
+        <binding name="EdubaseFileManagerSoap11"  xdt:Locator="Match(name)" xdt:Transform="Remove" />
+      </basicHttpBinding>
+    </bindings>
+    <client>
+      <endpoint name="EdubaseSoap11" xdt:Locator="Match(name)" xdt:Transform="Remove"/>
+      <endpoint name="EdubaseFileManagerSoap11" xdt:Locator="Match(name)" xdt:Transform="Remove"/>
+    </client>
+  </system.serviceModel>
+</configuration>
