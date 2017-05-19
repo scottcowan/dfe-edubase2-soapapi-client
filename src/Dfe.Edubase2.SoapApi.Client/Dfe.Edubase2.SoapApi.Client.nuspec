@@ -18,7 +18,7 @@
     </frameworkAssemblies>
   </metadata>
   <files>
-    <file src="bin\Release\Ukrlp.SoapApi.Client.dll" target="lib\net45" />
+    <file src="bin\Release\Dfe.Edubase2.SoapApi.Client.dll" target="lib\net45" />
     <file src="Install\*.*" target="content" />
   </files>
 </package>
