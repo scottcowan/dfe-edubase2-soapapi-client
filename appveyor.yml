@@ -63,7 +63,7 @@ build:
 # scripts to run before build
 before_build:
   - ps: If (Test-Path "$env:package_dir") { Remove-Item "$env:package_dir" -Recurse -Force -ErrorAction SilentlyContinue }
-  - nuget restore src\Ukrlp.SoapApi.sln
+  - nuget restore src\Dfe.Edubase2.SoapApi.sln
 
 # scripts to run after build
 after_build:
