@@ -67,7 +67,6 @@ before_build:
 
 # scripts to run after build
 after_build:
-  - cmd: dotnet test src\Dfe.Edubase2.SoapApi.Client.Tests\Dfe.Edubase2.SoapApi.Client.Tests.csproj
   - mkdir %PACKAGE_DIR%
   - nuget pack src\Dfe.Edubase2.SoapApi.Client\Dfe.Edubase2.SoapApi.Client.nuspec -OutputDirectory %PACKAGE_DIR% -BasePath src\Dfe.Edubase2.SoapApi.Client -Verbosity Detailed -Version %APPVEYOR_BUILD_VERSION% -Symbols -Properties Configuration=Release
 
