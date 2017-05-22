@@ -65,6 +65,7 @@
     <Compile Include="Service References\EdubaseService\GetReportRequestBody.cs" />
     <Compile Include="Service References\EdubaseService\GetReportResponse.cs" />
     <Compile Include="Service References\EdubaseService\GetReportResponseBody.cs" />
+    <Compile Include="Service References\EdubaseService\IEdubaseClient.cs" />
     <Compile Include="Service References\EdubaseService\Map.cs" />
     <Compile Include="Service References\EdubaseService\MapElement.cs" />
     <Compile Include="Service References\EdubaseService\EdubaseFileManagerChannel.cs">

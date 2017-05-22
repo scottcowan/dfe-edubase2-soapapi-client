@@ -6,17 +6,23 @@ namespace Dfe.Edubase2.SoapApi.Client
 {
     public class EstablishmentClient
     {
-        private readonly EdubaseClient _client;
+        private readonly IEdubaseClient _client;
 
-        public EstablishmentClient(string username, string password)
+        public EstablishmentClient(string username, string password) : this(CreateEdubaseClient(username, password))
         {
-            _client = CreateEdubaseClient(username, password);
         }
+
+        internal EstablishmentClient(IEdubaseClient client)
+        {
+            _client = client;
+        }
+
 
         public IEnumerable<Establishment> FindEstablishments(EstablishmentFilter filter = null)
         {
             int pages;
             filter = filter ?? new EstablishmentFilter();
+            filter.Page = 0;
             foreach (var establishment in _client.FindEstablishments(filter, out pages))
             {
                 yield return establishment;
@@ -36,6 +42,7 @@ namespace Dfe.Edubase2.SoapApi.Client
         {
             var list = new List<Establishment>();
             filter = filter ?? new EstablishmentFilter();
+            filter.Page = 0;
             var response = await _client.FindEstablishmentsAsync(new FindEstablishmentsRequest(filter));
             list.AddRange(response.Establishments);
             for (var i = 1; i < response.PageCount; i++)

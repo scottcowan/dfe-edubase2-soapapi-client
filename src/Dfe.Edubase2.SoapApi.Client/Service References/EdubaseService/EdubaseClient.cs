@@ -2,7 +2,8 @@ namespace Dfe.Edubase2.SoapApi.Client.EdubaseService
 {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    internal class EdubaseClient : System.ServiceModel.ClientBase<Dfe.Edubase2.SoapApi.Client.EdubaseService.Edubase>, Dfe.Edubase2.SoapApi.Client.EdubaseService.Edubase {
+    internal class EdubaseClient : System.ServiceModel.ClientBase<Dfe.Edubase2.SoapApi.Client.EdubaseService.Edubase>, Dfe.Edubase2.SoapApi.Client.EdubaseService.Edubase, IEdubaseClient
+    {
         
         public EdubaseClient() {
         }

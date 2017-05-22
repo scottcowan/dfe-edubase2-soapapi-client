@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Dfe.Edubase2.SoapApi.Client")]
+[assembly: AssemblyTitle("Dfe.Edubase2.SoapApi.Client.Tests")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Dfe.Edubase2.SoapApi.Client")]
+[assembly: AssemblyProduct("Dfe.Edubase2.SoapApi.Client.Tests")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("e38c8c38-8784-4fcd-bb5d-39ba862a914e")]
+[assembly: Guid("4dadb4cf-0fb7-46e2-80d0-d1e1939fa240")]
 
 // Version information for an assembly consists of the following four values:
 //
@@ -34,6 +34,3 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: AssemblyInformationalVersion("0.0.0")]
-
-[assembly:InternalsVisibleTo("Dfe.Edubase2.SoapApi.Client.Tests")]
