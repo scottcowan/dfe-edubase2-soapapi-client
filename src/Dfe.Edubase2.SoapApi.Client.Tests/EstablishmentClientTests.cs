@@ -73,7 +73,7 @@ namespace Dfe.Edubase2.SoapApi.Client.Tests
         }
 
         [Test]
-        public void ShouldIgnoreThePageIfItsExplicitlyStatedAsync()
+        public async Task ShouldIgnoreThePageIfItsExplicitlyStatedAsync()
         {
             // Arrange
             var pageCallbacks = new List<int>();
@@ -83,8 +83,7 @@ namespace Dfe.Edubase2.SoapApi.Client.Tests
                 .Callback<FindEstablishmentsRequest>(x => pageCallbacks.Add(x.Filter.Page));
 
             // Act
-            var task = sut.FindEstablishmentsAsync(new EstablishmentFilter {Page = 1});
-            Task.WaitAll(task);
+            await sut.FindEstablishmentsAsync(new EstablishmentFilter {Page = 1});
 
             // Assert
             mockClient.Verify(x => x.FindEstablishmentsAsync(It.IsAny<FindEstablishmentsRequest>()), Times.Exactly(2));
