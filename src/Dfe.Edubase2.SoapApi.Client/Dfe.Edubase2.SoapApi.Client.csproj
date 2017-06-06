@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="EstablishmentClient.cs" />
     <Compile Include="EstablishmentType.cs" />
+    <Compile Include="IEstablishmentClient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\EdubaseService\DateInterval.cs" />
     <Compile Include="Service References\EdubaseService\Dictionary.cs" />
